@@ -16,7 +16,7 @@
 	
 	
 	if (!$seldb)die("資料庫切換失敗！");
-	//使用中文要用這兩行=========================================
+
 	mysqli_query($db_link, "SET CHARACTER SET utf8");
 	mysqli_query($db_link, "SET collation_connection = 	'utf8_general_ci'");
 

@@ -19,12 +19,7 @@
 	//使用中文要用這兩行=========================================
 	mysqli_query($db_link, "SET CHARACTER SET utf8");
 	mysqli_query($db_link, "SET collation_connection = 	'utf8_general_ci'");
-	//=================================================
-	//$sql_query = "select id from students";
-	//$result = mysqli_query($db_link, $sql_query);
-	//$row_result=mysqli_num_rows($result);
-	//print_r($row_result);
-	//while($row_result=mysqli_fetch_assoc($result)){
+
 	$result= mysqli_query($db_link, "select id from students");
 	echo mysqli_num_rows($result);
 	$newid = mysqli_num_rows($result)+1;
